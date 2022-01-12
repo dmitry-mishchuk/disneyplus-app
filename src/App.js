@@ -1,6 +1,7 @@
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Header from './components/Header';
 import Login from './components/Login';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       
         <Router>
+          <Header/>
           <Routes>
             <Route exact path="/" element={<Login/>} />
              
